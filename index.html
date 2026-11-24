@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- Demo para presentar: no indexar hasta que Dynamo la apruebe -->
+  <meta name="robots" content="noindex, nofollow">
+  <title>Dynamo · Kinesiología y fisioterapia en Nueva Córdoba</title>
+  <meta name="description" content="Consultorio de rehabilitación en el corazón de Nueva Córdoba. Kinesiología, fisioterapia, masajes desestresantes y aparatología. Ituzaingó 946, piso 2 A. Lunes a viernes de 8 a 20 h.">
+  <meta name="theme-color" content="#2E71BC">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&amp;family=Ubuntu+Sans:wght@400..700&amp;display=swap">
+  <link rel="stylesheet" href="css/dynamo.css">
+  <script src="js/dynamo.js" defer></script>
+</head>
+<body>
+  <!-- Íconos (dibujados para esta página) -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-tel" viewBox="0 0 24 24"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+    <symbol id="i-reloj" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+    <symbol id="i-estrella" viewBox="0 0 24 24"><path d="M12 3.3l2.65 5.45 6 .85-4.35 4.2 1.05 5.95L12 16.9l-5.35 2.85 1.05-5.95L3.35 9.6l6-.85z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4.2 12a7.8 7.8 0 1 1 3.4 6.45L4 19.6l1.1-3.35A7.7 7.7 0 0 1 4.2 12z"/><path d="M9 10.5h6M9 13.5h4"/></symbol>
+    <symbol id="i-copiar" viewBox="0 0 24 24"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2.5"/><path d="M15.5 8.5V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v7.5a2 2 0 0 0 2 2h2.5"/></symbol>
+    <symbol id="i-ruta" viewBox="0 0 24 24"><path d="M3.5 10.8L20.5 3.5l-7.3 17-2.1-8.1z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-flecha" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-afuera" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-8.5 8.5M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+    <!-- el anillo del logo, cortado arriba y abajo por la figura: viñeta de los servicios -->
+    <symbol id="i-aro" viewBox="0 0 48 48"><circle cx="24" cy="24" r="15" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" pathLength="100" stroke-dasharray="34 16" stroke-dashoffset="-33"/><circle cx="24" cy="24" r="4.5" style="fill: var(--aro-punto, currentColor)"/></symbol>
+  </svg>
+
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="envoltura cabecera-in">
+      <a class="marca" href="#inicio">
+        <img src="img/logo-dynamo.svg" alt="Dynamo · Kinesiología y fisioterapia" width="600" height="280">
+      </a>
+      <nav class="menu" aria-label="Secciones">
+        <a href="#servicios">Servicios</a>
+        <a href="#turno">Turnos</a>
+        <a href="#preguntas">Preguntas</a>
+        <a href="#donde">Dónde</a>
+      </nav>
+      <a class="btn btn-turno btn-cabecera" href="#turno">Pedir turno</a>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- PORTADA -->
+    <section class="portada" id="inicio" aria-labelledby="titulo">
+      <div class="envoltura portada-in">
+        <div class="portada-texto">
+          <p class="antetitulo">Kinesiología y fisioterapia<span class="sep"> · </span><span class="lugar">Nueva Córdoba</span></p>
+          <h1 id="titulo">Consultorio de rehabilitación <span>en el corazón de Nueva Córdoba</span></h1>
+          <p class="bajada">Kinesiología y fisioterapia para recuperarte de una lesión y volver a moverte. También masajes desestresantes y aparatología.</p>
+          <div class="portada-acciones">
+            <a class="btn btn-turno" href="#turno">Pedir turno</a>
+            <a class="btn btn-borde" href="tel:+543514606845"><svg class="i i-lleno" aria-hidden="true"><use href="#i-tel"/></svg><span>Llamar<span class="desde-ancho"> al 0351 460-6845</span></span></a>
+          </div>
+          <ul class="datos">
+            <li>
+              <svg class="i" aria-hidden="true"><use href="#i-reloj"/></svg>
+              <span><strong>Lunes a viernes, 8 a 20 h</strong> <span class="estado" data-estado="corto"></span></span>
+            </li>
+            <li>
+              <svg class="i" aria-hidden="true"><use href="#i-pin"/></svg>
+              <a href="#donde"><strong>Ituzaingó 946, piso 2 A</strong> Nueva Córdoba</a>
+            </li>
+            <li>
+              <svg class="i i-lleno" aria-hidden="true"><use href="#i-estrella"/></svg>
+              <a href="#opiniones"><strong>4,6 en Google</strong> 20 opiniones</a>
+            </li>
+          </ul>
+        </div>
+        <div class="portada-figura" aria-hidden="true">
+          <picture>
+            <source media="(prefers-reduced-motion: reduce)" srcset="img/isotipo-dynamo.svg">
+            <img src="img/isotipo-dynamo-animado.svg" alt="" width="212" height="272">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="seccion servicios" id="servicios" aria-labelledby="t-servicios">
+      <div class="envoltura">
+        <div class="seccion-cabeza aparece">
+          <p class="antetitulo">Servicios</p>
+          <h2 id="t-servicios">Lo que podés hacer en Dynamo</h2>
+        </div>
+        <div class="servicios-grilla">
+          <ul class="servicios-lista">
+            <li class="servicio aparece" style="--i:0">
+              <svg class="aro" aria-hidden="true"><use href="#i-aro"/></svg>
+              <h3>Rehabilitación de lesiones</h3>
+              <p>Para recuperarte de una lesión o de un dolor que te frena, con seguimiento sesión a sesión.</p>
+            </li>
+            <li class="servicio aparece" style="--i:1">
+              <svg class="aro" aria-hidden="true"><use href="#i-aro"/></svg>
+              <h3>Kinesiología y fisioterapia</h3>
+              <p>Atención personalizada con el equipo de kinesiólogos y fisioterapeutas del consultorio.</p>
+            </li>
+            <li class="servicio aparece" style="--i:2">
+              <svg class="aro" aria-hidden="true"><use href="#i-aro"/></svg>
+              <h3>Masajes desestresantes</h3>
+              <p>Para aflojar la tensión acumulada en el cuerpo y bajar un cambio.</p>
+            </li>
+            <li class="servicio aparece" style="--i:3">
+              <svg class="aro" aria-hidden="true"><use href="#i-aro"/></svg>
+              <h3>Aparatología</h3>
+              <p>Equipos que complementan los tratamientos, según lo que indique el profesional en tu caso.</p>
+            </li>
+          </ul>
+          <!-- ESPACIO RESERVADO: reemplazar por una foto real cuando Dynamo la mande -->
+          <figure class="foto-reservada aparece">
+            <svg class="aro" aria-hidden="true"><use href="#i-aro"/></svg>
+            <figcaption>
+              <strong>Espacio para una foto del consultorio o del equipo</strong>
+              <span>Se completa con una foto real que mande Dynamo.</span>
+            </figcaption>
+          </figure>
+        </div>
+        <p class="cobertura aparece">
+          <span><strong>Obras sociales y prepagas.</strong> Trabajan con obras sociales y prepagas: consultá la cobertura de la tuya. También se atiende de forma particular.</span>
+          <a class="enlace" href="#turno">Consultala al pedir el turno <svg class="i" aria-hidden="true"><use href="#i-flecha"/></svg></a>
+        </p>
+      </div>
+    </section>
+
+    <!-- PEDÍ TU TURNO -->
+    <section class="seccion turno" id="turno" aria-labelledby="t-turno">
+      <div class="envoltura">
+        <div class="seccion-cabeza">
+          <p class="antetitulo">Turnos</p>
+          <h2 id="t-turno">Pedí tu turno con un solo mensaje</h2>
+          <p class="seccion-bajada">Completá estos datos y la página arma un mensaje con todo lo que necesita la secretaría. Mandá todo junto y te confirman día y horario.</p>
+        </div>
+
+        <div class="armador">
+          <form class="armador-form" id="armador" novalidate>
+            <div class="campo" id="campo-nombre">
+              <label class="pregunta" for="nombre">Nombre y apellido</label>
+              <input id="nombre" name="nombre" type="text" autocomplete="name" autocapitalize="words" maxlength="60" aria-describedby="error-nombre">
+              <p class="error" id="error-nombre" hidden></p>
+            </div>
+
+            <fieldset class="campo" id="campo-motivo" aria-describedby="error-motivo">
+              <legend class="pregunta">¿Por qué querés el turno?</legend>
+              <div class="chips">
+                <label class="chip"><input type="radio" name="motivo" value="lesion"><span>Lesión o dolor</span></label>
+                <label class="chip"><input type="radio" name="motivo" value="operacion"><span>Después de una operación</span></label>
+                <label class="chip"><input type="radio" name="motivo" value="masajes"><span>Masajes</span></label>
+                <label class="chip"><input type="radio" name="motivo" value="otro"><span>Otro</span></label>
+              </div>
+              <p class="error" id="error-motivo" hidden></p>
+              <label class="sub" for="detalle" id="detalle-etiqueta">Si querés, contá un poco más <span class="opcional">(opcional)</span></label>
+              <input id="detalle" name="detalle" type="text" maxlength="120" placeholder="Por ejemplo: rodilla derecha">
+            </fieldset>
+
+            <fieldset class="campo" id="campo-cobertura" aria-describedby="error-cobertura">
+              <legend class="pregunta">¿Cómo te atendés?</legend>
+              <div class="chips">
+                <label class="chip"><input type="radio" name="cobertura" value="obra"><span>Obra social o prepaga</span></label>
+                <label class="chip"><input type="radio" name="cobertura" value="particular"><span>Particular</span></label>
+              </div>
+              <div class="cual" id="cual" hidden>
+                <label class="sub" for="cual-nombre">¿Cuál? Si sabés el plan, sumalo.</label>
+                <input id="cual-nombre" name="cual" type="text" maxlength="60" autocomplete="off">
+              </div>
+              <p class="error" id="error-cobertura" hidden></p>
+            </fieldset>
+
+            <fieldset class="campo" id="campo-pedido" aria-describedby="error-pedido">
+              <legend class="pregunta">¿Tenés pedido médico?</legend>
+              <div class="chips">
+                <label class="chip"><input type="radio" name="pedido" value="si"><span>Sí</span></label>
+                <label class="chip"><input type="radio" name="pedido" value="no"><span>No</span></label>
+                <label class="chip"><input type="radio" name="pedido" value="nose"><span>No sé</span></label>
+              </div>
+              <p class="error" id="error-pedido" hidden></p>
+            </fieldset>
+
+            <fieldset class="campo" id="campo-dias" aria-describedby="ayuda-dias error-dias">
+              <legend class="pregunta">¿Qué días podés?</legend>
+              <p class="ayuda" id="ayuda-dias">Marcá todos los que te sirvan.</p>
+              <div class="chips chips-dias">
+                <label class="chip"><input type="checkbox" name="dias" value="lun"><span><span aria-hidden="true">Lun</span><span class="vh">Lunes</span></span></label>
+                <label class="chip"><input type="checkbox" name="dias" value="mar"><span><span aria-hidden="true">Mar</span><span class="vh">Martes</span></span></label>
+                <label class="chip"><input type="checkbox" name="dias" value="mie"><span><span aria-hidden="true">Mié</span><span class="vh">Miércoles</span></span></label>
+                <label class="chip"><input type="checkbox" name="dias" value="jue"><span><span aria-hidden="true">Jue</span><span class="vh">Jueves</span></span></label>
+                <label class="chip"><input type="checkbox" name="dias" value="vie"><span><span aria-hidden="true">Vie</span><span class="vh">Viernes</span></span></label>
+              </div>
+              <p class="error" id="error-dias" hidden></p>
+            </fieldset>
+
+            <fieldset class="campo" id="campo-franja" aria-describedby="ayuda-franja error-franja">
+              <legend class="pregunta">¿En qué horario?</legend>
+              <p class="ayuda" id="ayuda-franja">Podés marcar más de uno.</p>
+              <div class="chips chips-franjas">
+                <label class="chip"><input type="checkbox" name="franja" value="manana"><span>Mañana <small>8 a 12 h</small></span></label>
+                <label class="chip"><input type="checkbox" name="franja" value="mediodia"><span>Mediodía <small>12 a 16 h</small></span></label>
+                <label class="chip"><input type="checkbox" name="franja" value="tarde"><span>Tarde <small>16 a 20 h</small></span></label>
+              </div>
+              <p class="error" id="error-franja" hidden></p>
+            </fieldset>
+          </form>
+
+          <aside class="vista" aria-labelledby="t-vista">
+            <div class="vista-cabeza">
+              <svg class="progreso" viewBox="0 0 48 48" aria-hidden="true">
+                <circle class="progreso-pista" cx="24" cy="24" r="19"/>
+                <circle class="progreso-carga" cx="24" cy="24" r="19" pathLength="100"/>
+              </svg>
+              <div>
+                <h3 id="t-vista">Así llega tu mensaje</h3>
+                <p class="vista-estado" id="estado-armado">Faltan 6 datos</p>
+              </div>
+            </div>
+
+            <div class="burbuja">
+              <p class="mensaje" id="mensaje"></p>
+            </div>
+
+            <p class="faltan" id="faltan" hidden></p>
+
+            <div class="vista-acciones">
+              <a class="btn btn-turno btn-ancho" id="enviar-wa" href="https://wa.me/543514606845" target="_blank" rel="noopener">
+                <svg class="i" aria-hidden="true"><use href="#i-chat"/></svg>Enviar por WhatsApp
+              </a>
+              <button class="btn btn-borde btn-ancho" id="copiar" type="button">
+                <svg class="i" aria-hidden="true"><use href="#i-copiar"/></svg><span>Copiar el mensaje</span>
+              </button>
+            </div>
+            <p class="aviso" id="aviso" role="status" aria-live="polite"></p>
+            <p class="llamar-alt">¿Preferís llamar? <a href="tel:+543514606845">0351 460-6845</a></p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- OPINIONES -->
+    <section class="seccion opiniones" id="opiniones" aria-labelledby="t-opiniones">
+      <div class="envoltura opiniones-in">
+        <div class="nota aparece">
+          <p class="antetitulo">Opiniones</p>
+          <h2 id="t-opiniones"><span class="nota-num">4,6</span> <span class="nota-de">en Google</span></h2>
+          <p class="estrellas" role="img" aria-label="4,6 de 5 estrellas"><span class="estrellas-llenas" style="--v: 92%"></span></p>
+          <p class="nota-texto">Con 20 opiniones en Google Maps.</p>
+          <a class="enlace" href="https://maps.google.com/?cid=3237220981094217512" target="_blank" rel="noopener">Ver las opiniones en Google Maps <svg class="i" aria-hidden="true"><use href="#i-afuera"/></svg></a>
+          <p class="nota-fb">Recomendado por el 100&nbsp;% en Facebook <span>(6 opiniones)</span></p>
+        </div>
+        <ul class="citas">
+          <li class="cita aparece" style="--i:0">
+            <blockquote><p>Excelente atención de las secretarias y todos los/as kines. Atención personalizada, buena onda y profesionalismo que garantizan una óptima recuperación. Súper recomendado</p></blockquote>
+            <p class="autor">David Iván P. <span>5 estrellas en Google</span></p>
+          </li>
+          <li class="cita aparece" style="--i:1">
+            <blockquote><p>Excelente atención, buena onda siempre, y sobre todo por cada lesión que vine me fui en excelente estado... MUY RECOMENDABLE... Cada rehabilitación que tengo que hacer, solo vengo acá...</p></blockquote>
+            <p class="autor">Alan A. <span>5 estrellas en Google</span></p>
+          </li>
+          <li class="cita aparece" style="--i:2">
+            <blockquote><p>Súper recomendado!!! Lau y Yami son lo más! Mucha calidez y profesionalismo!</p></blockquote>
+            <p class="autor">Lourdes A. <span>5 estrellas en Google</span></p>
+          </li>
+          <li class="cita aparece" style="--i:3">
+            <blockquote><p>Buena atención</p></blockquote>
+            <p class="autor">Vanesa L. <span>5 estrellas en Google</span></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section class="seccion preguntas" id="preguntas" aria-labelledby="t-preguntas">
+      <div class="envoltura preguntas-in">
+        <div class="seccion-cabeza aparece">
+          <p class="antetitulo">Preguntas</p>
+          <h2 id="t-preguntas">Lo que conviene saber antes de ir</h2>
+          <p class="seccion-bajada">¿No encontrás tu duda? Consultala al pedir el turno.</p>
+        </div>
+        <div class="acordeon">
+          <details>
+            <summary>¿Cómo pido turno?<span class="signo" aria-hidden="true"></span></summary>
+            <div class="respuesta"><p>Armá tu mensaje en <a href="#turno">Pedí tu turno</a> y mandalo por WhatsApp, o copialo. También podés llamar al <a href="tel:+543514606845">0351 460-6845</a>, de lunes a viernes de 8 a 20 h.</p></div>
+          </details>
+          <details>
+            <summary>¿Trabajan con obras sociales y prepagas?<span class="signo" aria-hidden="true"></span></summary>
+            <div class="respuesta"><p>Sí. Consultá la cobertura de la tuya al pedir el turno: en el armador hay un lugar para escribir cuál tenés. También podés atenderte de forma particular.</p></div>
+          </details>
+          <details>
+            <summary>¿Necesito pedido médico?<span class="signo" aria-hidden="true"></span></summary>
+            <div class="respuesta"><p>Depende de tu cobertura: con obra social o prepaga, por lo general se pide. Consultalo al pedir el turno y, si ya lo tenés, marcalo en el mensaje.</p></div>
+          </details>
+          <details>
+            <summary>¿Qué días y en qué horario atienden?<span class="signo" aria-hidden="true"></span></summary>
+            <div class="respuesta"><p>De lunes a viernes, de 8 a 20 h. Sábados y domingos, cerrado. En feriados el horario puede variar: consultalo antes.</p></div>
+          </details>
+          <details>
+            <summary>¿Dónde queda y cómo entro?<span class="signo" aria-hidden="true"></span></summary>
+            <div class="respuesta"><p>En Ituzaingó 946, piso 2 A, en Nueva Córdoba. Al llegar, tocá el portero <strong>021</strong>. <a href="#donde">Ver el mapa</a>.</p></div>
+          </details>
+          <details>
+            <summary>¿Es accesible?<span class="signo" aria-hidden="true"></span></summary>
+            <div class="respuesta"><p>Google indica que la entrada es accesible para silla de ruedas. Si necesitás asistencia para llegar al consultorio, avisá al pedir el turno.</p></div>
+          </details>
+          <details>
+            <summary>¿Hacen masajes?<span class="signo" aria-hidden="true"></span></summary>
+            <div class="respuesta"><p>Sí, masajes desestresantes. Consultá los días disponibles al pedir el turno: en el armador elegí «Masajes».</p></div>
+          </details>
+          <details>
+            <summary>¿Qué llevo a la primera sesión?<span class="signo" aria-hidden="true"></span></summary>
+            <div class="respuesta"><p>Ropa cómoda y, si tenés, el pedido médico y los estudios que te hayan hecho. Si te atendés con obra social o prepaga, consultá si hace falta algo más.</p></div>
+          </details>
+          <details>
+            <summary>¿Qué hago si no puedo ir a una sesión?<span class="signo" aria-hidden="true"></span></summary>
+            <div class="respuesta"><p>Avisá lo antes posible al consultorio, al <a href="tel:+543514606845">0351 460-6845</a>.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- DÓNDE -->
+    <section class="seccion donde" id="donde" aria-labelledby="t-donde">
+      <div class="envoltura donde-in">
+        <div class="donde-info aparece">
+          <p class="antetitulo">Dónde</p>
+          <h2 id="t-donde">Ituzaingó 946, en Nueva Córdoba</h2>
+          <dl class="ficha">
+            <div>
+              <dt><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg>Dirección</dt>
+              <dd>Ituzaingó 946, piso 2 A<br>Portero <strong>021</strong> · X5000IJT Córdoba</dd>
+            </div>
+            <div>
+              <dt><svg class="i" aria-hidden="true"><use href="#i-reloj"/></svg>Horario</dt>
+              <dd>Lunes a viernes, de 8 a 20 h<br>Sábados y domingos, cerrado
+                <span class="estado" data-estado></span>
+                <small>En feriados el horario puede variar.</small></dd>
+            </div>
+            <div>
+              <dt><svg class="i i-lleno" aria-hidden="true"><use href="#i-tel"/></svg>Teléfono</dt>
+              <dd><a href="tel:+543514606845">0351 460-6845</a></dd>
+            </div>
+          </dl>
+          <div class="donde-acciones">
+            <a class="btn btn-azul" href="https://www.google.com/maps/dir/?api=1&amp;destination=Dynamo+kinesiologia+y+fisioterapia,+Ituzaing%C3%B3+946,+C%C3%B3rdoba" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-ruta"/></svg>Cómo llegar</a>
+            <a class="btn btn-borde" href="https://www.facebook.com/people/Dynamo-kinesiologia-y-fisioterapia/100043464566807/" target="_blank" rel="noopener">Facebook <svg class="i" aria-hidden="true"><use href="#i-afuera"/></svg></a>
+          </div>
+        </div>
+        <div class="mapa aparece">
+          <iframe title="Mapa: Dynamo en Ituzaingó 946, Nueva Córdoba" src="https://www.google.com/maps?q=Dynamo+kinesiologia+y+fisioterapia,+Ituzaing%C3%B3+946,+C%C3%B3rdoba&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="envoltura pie-in">
+      <div class="pie-marca">
+        <img src="img/logo-dynamo-blanco.svg" alt="Dynamo · Kinesiología y fisioterapia" width="600" height="280" loading="lazy">
+        <p>Consultorio de rehabilitación en el corazón de Nueva Córdoba.</p>
+      </div>
+      <ul class="pie-datos">
+        <li>Ituzaingó 946, piso 2 A (portero 021), Nueva Córdoba</li>
+        <li>Lunes a viernes, de 8 a 20 h</li>
+        <li><a href="tel:+543514606845">0351 460-6845</a></li>
+        <li><a href="https://www.facebook.com/people/Dynamo-kinesiologia-y-fisioterapia/100043464566807/" target="_blank" rel="noopener">Facebook</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Celular: acciones fijas abajo (se esconden en la portada, en el armador y en el pie) -->
+  <div class="barra" id="barra">
+    <a class="btn btn-borde" href="tel:+543514606845"><svg class="i i-lleno" aria-hidden="true"><use href="#i-tel"/></svg>Llamar</a>
+    <a class="btn btn-turno" href="#turno">Pedir turno</a>
+  </div>
+</body>
+</html>
